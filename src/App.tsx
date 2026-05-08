@@ -63,28 +63,28 @@ const discordCommunities = [
 // Real cyberdeck images sourced from public community posts
 const deckImages = [
   {
-    url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
-    caption: 'Circuit art // DIY electronics',
+    url: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&q=80',
+    caption: 'Raspberry Pi portable // DIY cyberdeck',
   },
   {
-    url: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
-    caption: 'Neon glow // Custom build',
+    url: 'https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?w=600&q=80',
+    caption: 'Hacker setup // Command center',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=600&q=80',
+    caption: 'Electronics DIY // Maker space',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+    caption: 'Circuit board // Hardware hacking',
   },
   {
     url: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&q=80',
-    caption: 'Keyboard modding // Tactile switches',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1601445638532-3cc6f6c9d0e9?w=600&q=80',
-    caption: 'Portable rig // Field ready',
+    caption: 'Keyboard build // Tactile switches',
   },
   {
     url: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=600&q=80',
-    caption: 'Raspberry Pi // Brain of the build',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1581472723648-909f4851d4ae?w=600&q=80',
-    caption: 'Soldering // Making it real',
+    caption: 'Pi setup // Brain of the build',
   },
 ]
 
@@ -92,32 +92,32 @@ const deckImages = [
 const videoRibbon = [
   {
     id: 'jl9nBxsyUF0',
-    title: 'Building a Cyberdeck from Scratch',
+    title: 'Building a Raspberry Pi Cyberdeck',
     channel: 'NetworkChuck',
   },
   {
     id: 'xKpBTj0LNKA',
-    title: 'Raspberry Pi Cyberdeck Build',
+    title: 'DIY Linux Laptop from Scratch',
     channel: 'Jeff Geerling',
   },
   {
-    id: '2wHRTobZLkA',
-    title: 'Cyberpunk DIY Laptop Build',
+    id: 'WgNu-F4bW9M',
+    title: 'Cyberdeck Build Log',
     channel: 'Hackaday',
   },
   {
     id: 'V_ZzKg-xV3s',
-    title: 'The Ultimate Portable Hacking Setup',
+    title: 'Portable Hacking Setup',
     channel: 'LiveOverflow',
   },
   {
-    id: 'qI-JKUZS9G0',
+    id: 'dNrTnImt4GM',
     title: 'Custom Mechanical Keyboard Build',
     channel: 'TaeKeyboards',
   },
   {
     id: 'LNI6yHK6HZ0',
-    title: 'Field Radio Cyberdeck — SOTA Build',
+    title: 'Field Radio Deck — SOTA Build',
     channel: 'Ham Radio Crash Course',
   },
 ]
