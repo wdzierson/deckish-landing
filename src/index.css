@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,18 +7,24 @@
 }
 
 :root {
-  --bg: #0d0f12;
-  --bg-card: #141720;
-  --bg-card-hover: #1a1e2b;
-  --border: #2a2f3d;
-  --text: #e8eaf0;
-  --text-muted: #7a8099;
-  --accent: #4f9cf9;
-  --accent-dim: #1e3a5f;
-  --green: #3ecf8e;
-  --amber: #f59e0b;
+  --bg: #080a0d;
+  --bg-card: #0d1117;
+  --bg-card-hover: #111820;
+  --border: #1a2a1a;
+  --border-glow: #00ff4140;
+  --text: #c8d8c0;
+  --text-muted: #5a7a5a;
+  --accent: #00ff41;
+  --accent-dim: #00ff4112;
+  --accent-glow: #00ff4140;
+  --red: #ff2a2a;
+  --amber: #ffaa00;
+  --cyan: #00eeff;
+  --purple: #9b59b6;
+  --green: #00ff41;
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'Share Tech Mono', 'JetBrains Mono', monospace;
+  --font-display: 'Orbitron', 'Share Tech Mono', monospace;
 }
 
 html {
@@ -31,6 +37,26 @@ body {
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  /* Scanline overlay */
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 65, 0.015) 2px,
+      rgba(0, 255, 65, 0.015) 4px
+    );
+}
+
+/* Global CRT noise texture */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
 }
 
 a {
